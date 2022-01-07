@@ -1,0 +1,57 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <style>
+        .card-title {
+            font-weight: 700;
+            font-family: 'Lobster Two', cursive;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+
+        .card-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.6em;
+        }
+
+        .action {
+            padding: 5px;
+            display: inline-block;
+            border: 1px solid rgba(0,0,0,.5);
+        }
+    </style>
+</head>
+<body>
+    @model E_Journal.Models.Journal
+
+    @{
+        ViewData["Title"] = "Details";
+    }
+    <div>
+        <h3 class="display-4">Note Details</h3>
+        <hr />
+    </div>
+
+    <div class="card" style="width: 100%; background-color: #EDF6F9; ">
+
+        <div class="card-body">
+            <h2 class="card-title">@Html.DisplayFor(model => model.Title)</h2>
+            <p class="card-text multi-line">@Html.DisplayFor(model => model.Message)</p>
+
+            <div class="action">
+                <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a> |
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

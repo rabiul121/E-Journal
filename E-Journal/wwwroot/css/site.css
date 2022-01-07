@@ -1,0 +1,281 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*
+    Personal Customizations
+*/
+
+
+
+
+.car-cap {
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    color: #fff;
+    background-color: rgba(128, 128, 128, .3);
+    height: 100px;
+    width: 600px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 50px;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 600px !important;
+}
+
+.get-started-btn {
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
+
+/*
+    Journals
+*/
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.add-note {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    height: 30px;
+    width: 140px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+    .add-note p {
+        padding: 5px;
+        text-align: center;
+        border: 1px solid #889EAF;
+        border-radius: 50px;
+    }
+        .add-note p:hover {
+            text-decoration: none;
+            background-color: #a8dadc;
+            border: 1px solid #457b9d;
+            color: #101820;
+        }
+
+    .add-note a {
+        text-decoration: none;
+        color: #1d3557;
+    }
+
+        .add-note a:hover {
+            text-decoration: none;
+            color: #1d3557;
+        }
+
+.get-started {
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+    .get-started p {
+        display: block;
+        padding: 5px;
+        border: 2px solid #1b6ec2;
+        border-radius: 50px;
+        font-family: 'Droid Sans Mono';
+        font-weight: 900;
+        font-size: 2rem;
+        height: 60px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+.get-started p a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+        .get-started p:hover {
+            text-decoration: none;
+            background-color: aliceblue;
+            
+        }
+        .get-started a:hover {
+            text-decoration: none;
+            color: tomato;
+        }
+
+.each-msg {
+    border: 1px solid #333;
+}
+
+.msg-head {
+    
+    text-align: center;
+    
+}
+.col-2 {
+    border: 1px solid #333;
+    width: 100%;
+    line-height: 1.4em;
+    height: 5.3em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: auto;
+    padding: 25px 3px;
+    text-align: center;
+    background-color: #d8f3dc;
+    font-size: 1.1rem;
+}
+
+.col-8 {
+    border: 1px solid #333;
+    width: 100%;
+    line-height: 1.4em;
+    height: 5.3em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: auto;
+    padding: 12px;
+    text-align: left;
+    background-color: #edf6f9;
+    font-size: 1.1rem;
+}
+
+
+.note-title-head {
+    background-color: #64dfdf;
+    border: 1px solid #333;
+    width: 100%;
+    line-height: 1.2em;
+    height: 3em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.note-title-msg {
+    background-color: #64dfdf;
+    border: 1px solid #333;
+    width: 100%;
+    line-height: 1.2em;
+    height: 3em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+
+.dlt-note{
+    padding-top: 10px;
+}
+
+.delete-post {
+    display: inline-block;
+}
+.delete-post h3 {
+    border: 1px solid #1d3557;
+    padding: 10px;
+    position: relative;
+    border-radius: 50px;
+    margin: 0;
+    background-color: #ff0000;
+    padding-bottom: 13px;
+    font-weight: 700;
+    color: #343434;
+}
+
+.multi-line {
+    white-space: pre-wrap;
+}

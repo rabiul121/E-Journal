@@ -1,0 +1,50 @@
+﻿
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <style>
+        #note-body {
+            font-size: 20px;
+            /*font-family: Georgia;*/
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            /*color: #5F4B32;*/
+            /*background-color: #FBF0D9;*/
+            line-height: 1.6em;
+        }
+    </style>
+</head>
+<body>
+    @model E_Journal.Models.Journal
+
+    @{
+        ViewData["Title"] = "Delete";
+    }
+    <div class="delete-post">
+        <h3>Are you sure to delete this?</h3>
+    </div>
+    
+    <div>
+        <hr />
+        <div class="card" style="width: 100%; background-color: #EDF6F9; ">
+
+            <div class="card-body">
+                <h2 class="card-title" style="font-weight: 700; font-family: Raleway; border-bottom: 1px solid #333; padding-bottom: 3px;">@Html.DisplayFor(model => model.Title)</h2>
+                <p class="card-text" id="note-body">@Html.DisplayFor(model => model.Message)</p>
+            </div>
+        </div>
+        <div class="dlt-note">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <a asp-action="Index">Back to List</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

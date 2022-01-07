@@ -1,0 +1,68 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans';
+            /*font-size: 1.1em;*/
+        }
+    </style>
+</head>
+<body>
+
+    @model IEnumerable<E_Journal.Models.Journal>
+
+    @{
+        ViewData["Title"] = "Index";
+    }
+    <div class="container">
+
+        <h1 class="display-5">All Notes</h1>
+
+        <div class="add-note">
+            <p>
+                <a asp-action="Create">Create New</a>
+            </p>
+        </div>
+
+
+        <div class="row  font-weight-bold msg-head">
+            <div class="col-2 note-title-head">
+                @Html.DisplayNameFor(model => model.Title)
+            </div>
+            <div class="col-8 note-title-msg">
+                @Html.DisplayNameFor(model => model.Message)
+            </div>
+            <div class="col-2 note-title-head">
+                
+            </div>
+
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-2 font-weight-bold">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </div>
+
+                <div class="col-8 msg-body-div">
+                    <div class="msg-body-txt multi-line">@Html.DisplayFor(modelItem => item.Message)</div>
+                </div>
+
+                <div class="col-2">
+
+                    <a asp-action="Details" asp-route-id="@item.Id">View Note</a>
+
+                </div>
+            }
+            <br />
+        </div>
+
+    </div>
+</body>
+</html>
