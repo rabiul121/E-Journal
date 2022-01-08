@@ -29,7 +29,7 @@ namespace E_Journal.Controllers
 
         // GET: Journals/ShowSearchForm
         [Authorize]
-        public async Task<IActionResult> ShowSearchForm()
+        public IActionResult ShowSearchForm()
         {
             return View();
         }

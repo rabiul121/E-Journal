@@ -261,21 +261,6 @@ body {
     padding-top: 10px;
 }
 
-.delete-post {
-    display: inline-block;
-}
-.delete-post h3 {
-    border: 1px solid #1d3557;
-    padding: 10px;
-    position: relative;
-    border-radius: 50px;
-    margin: 0;
-    background-color: #ff0000;
-    padding-bottom: 13px;
-    font-weight: 700;
-    color: #343434;
-}
-
 .multi-line {
     white-space: pre-wrap;
 }
